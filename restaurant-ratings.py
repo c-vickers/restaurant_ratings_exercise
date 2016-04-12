@@ -48,7 +48,14 @@ def sort_restaurant_ratings():
 
 
 def revise_restaurant_ratings():
-    sort_restaurant_ratings()
+    restaurant_dict = sort_restaurant_ratings()
+    user_ratings = 0
+    user_name = raw_input("Hello. Please enter your name: ")
+    
+    while user_ratings != "q":
+    # Pull random data random.choice(restaurant_dict.keys())
+    # Then tell the user what the randomly generated restaurant rating is
+    # and ask them if they want to revise it
     # restaurant_name = raw_input("Please enter restaurant name: ")
     # restaurant_rating = raw_input("Please enter the restaurant's rating: ")
 
